@@ -10,6 +10,31 @@
     <title>Portfolio Alexis FERRER</title>
 </head>
 <body>
+    <!-- Page Loader Start -->
+    <div class="page-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Page Loader End -->
+
+    <!-- Background Circles Start -->
+    <div class="bg-circles">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+    </div>
+    <!-- Background Circles End -->
+
+    <!-- Overlay Start -->
+    <div class="overlay">
+
+    </div>
+
+    <!-- Overlay End -->
+
+
     <!-- MAIN START -->
     <div class="main">
         <!-- HEADER START -->
@@ -22,10 +47,10 @@
                     <nav class="nav">
                         <div class="nav-inner">
                             <ul>
-                                <li><a href="#" class="nav-item">Accueil</a></li>
-                                <li><a href="#" class="nav-item">A propos</a></li>
-                                <li><a href="#" class="nav-item">Portfolio</a></li>
-                                <li><a href="#" class="nav-item">Contact</a></li>
+                                <li><a href="#home" class="nav-item link-item">Accueil</a></li>
+                                <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
+                                <li><a href="#about" class="nav-item link-item">A propos</a></li>
+                                <li><a href="#contact" class="nav-item link-item">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -35,15 +60,15 @@
         <!-- HEADER END -->
 
         <!-- HOME SECTION START -->
-        <section class="home-section align-item-center active">
+        <section class="home-section align-item-center active" id="home">
             <div class="container">
                 <div class="row align-item-center">
                     <div class="home-text">
                         <p>Bonjour ! Je suis</p>
                         <h1>Alexis Ferrer</h1>
                         <h2>Developpeur Web Full Stack</h2>
-                        <a href="#" class="btn">À propos de moi</a>
-                        <a href="#" class="btn">Portfolio</a>
+                        <a href="#about" class="btn link-item">À propos de moi</a>
+                        <a href="#portfolio" class="btn link-item">Portfolio</a>
                     </div>
                     <div class="home-img">
                         <div class="img-box">
@@ -56,7 +81,7 @@
         <!-- HOME SECTION END -->
 
         <!-- ABOUT SECTION START -->
-        <section class="about-section sec-padding active">
+        <section class="about-section sec-padding" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -130,15 +155,15 @@
                             </div>
                         </div>
                         <!-- EXPERIENCE END -->
-                        <a href="#" class="btn">Télécharger mon CV</a>
-                        <a href="#" class="btn">Me contacter</a>
+                        <a href="/public/assets/dl/CVAlexisFerrer2023.pdf" target="_blank" class="btn">Télécharger mon CV</a>
+                        <a href="#contact" class="btn link-item">Me contacter</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ABOUT SECTION END -->
         <!-- PORTFOLIO START -->
-        <section class="portfolio-section sec-padding active">
+        <section class="portfolio-section sec-padding" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -254,12 +279,33 @@
                         </div>
                     </div>
                     <!-- PORTFOLIO ITEM END -->
+                    <!-- PORTFOLIO ITEM START -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="public/assets/img/d-tailing.png" alt="d-tailing">
+                        </div>
+                        <h3 class="portfolio-item-title">Projet final de formation</h3>
+                        <button type="button" class="btn view-project-btn">voir le projet</button>
+                        <div class="portfolio-item-detail">
+                            <div class="description">
+                                <p>Entreprise fictive de nettoyage auto professionnel (detailling), visualiser les prestations proposées par l'entreprise, inscription/connexion, prise de rendez-vous avec choix d'une prestation existante. L'entreprise a également accès au Dashboard permettant de voir les utilisateur inscrit, de programmer un rendez-vous pour un utilisateur, ajouter/modifier/supprimer une prestation.</p>                                
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Créer - <span>12/2022</span></li>
+                                    <li>Languages utilisés <span>HTML, CSS, Javascript, PHP, SQL</span></li>
+                                    <li>Visiter le site <span><a href="https://d-tailing.alexisferrer.fr/" target="_blank">D-Tailing</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO ITEM END -->
                 </div>
             </div>
         </section>
         <!-- PORTFOLIO END -->
         <!-- CONTACT START -->
-        <section id="contact" class="contact-section sec-padding">
+        <section id="contact" class="contact-section sec-padding" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
